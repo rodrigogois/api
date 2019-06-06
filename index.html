@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+            console.log(xmlhttp.status, xmlhttp.responseText);
+        }
+    }
+
+    xmlhttp.open('GET', 'http://localhost:8000/api/banks');
+    xmlhttp.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU1NDhhOTNmZGIyZjhjNDJkYzVkMTc5OWQ2ZThlZGY1ZTcwMjFiZTBjMGMwYjBjYTM3MTg0NDljZDExOGRkNmZkZDQ4M2I4ZjI2ZGM4MThkIn0.eyJhdWQiOiIyIiwianRpIjoiNTU0OGE5M2ZkYjJmOGM0MmRjNWQxNzk5ZDZlOGVkZjVlNzAyMWJlMGMwYzBiMGNhMzcxODQ0OWNkMTE4ZGQ2ZmRkNDgzYjhmMjZkYzgxOGQiLCJpYXQiOjE1MDE1NDU0ODAsIm5iZiI6MTUwMTU0NTQ4MCwiZXhwIjoxNTMzMDgxNDgwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.L21Wl7t7k4Fo2kM0FqCKcj3APZ8DHjCnH7IL9xuO8dDIqcvbwC0NnL7PqMxTqjE8phr0ulWS54CcL29k0m_28rHLM1kIpZd7LCGPl2PqTfd2UP6Yrss_cuhDS95UY4VgSrpFgXtlN8Yivj6EP0w31jMCWx6a3lQTy4KM772CgtU5WZHXOtW0zsaOU0z_Sy8ycd5qcJsNEmiutdTk-JHsbjIID4R2gOUVOCkfNdKG9QreBG0aGImMYkNAp3TEOGhvob1obkG53ddvHYIeCURa4-3UHSqugRq7vBirCSQHnr0lMG6hNyhIjlCL5RRLakqVQE7z_0yTNBNGk1gG1clwTslsiz9jPz5sDpc8KeA3BQ0mFDUx1DsgUcJoEO-IeTyaOmpps-_6SX44axivqVNfUi1EwDiSotJjpcd_qfrv-MYNrdKZsl41vEybtjZlzC_njomkho9v8qCWiLrw2yGnME89mtc8ZrexbdiY2IwdEHpygyHgyxSPplZg5Arrsm2etis4Axlqe--P83ljvKfQNhtnZR3MoQci5rZQrMtBqkjfhRpgLC9DzynrxZEh729zgV-vaFFVi_PpHb6YB7Gj9o-qJgu9VkI64fSxta3TXYSRBEpSErf34qGEGAQnFNOFWRmf2dvThyZ8GFMG0qTrkN7UMAHd_wz8dx1bAFex3y0');
+    xmlhttp.send();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="bootstrap/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+    </testsuites>
+	
+	<logging>
+      <log type="coverage-html" target="tests" charset="UTF-8" yui="true" highlight="true" lowUpperBound="30" highLowerBound="60" />
+      <log type="coverage-clover" target="tests/clover.xml"/>
+      <log type="coverage-crap4j" target="tests/crap4j.xml"/>
+      <log type="coverage-xml" target="tests/xml"/>
+      <log type="junit" target="tests/junit.xml" logIncompleteSkipped="false"/>
+    </logging>
+	
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app/Http/Controllers/Api</directory>
+			<exclude>
+			  <file>./app/Http/Controllers/Api/UserController.php</file>
+			</exclude>			
+        </whitelist>
+    </filter>
+    
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="QUEUE_DRIVER" value="sync"/>
+    </php>
+</phpunit>

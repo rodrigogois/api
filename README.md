@@ -25,24 +25,9 @@ API
 
 >`users`: tabela gerada pelo ***auth*** do Laravel para controle de usuarios 
 
->`password_resets`: tabela criado pelo ***auth*** do Laravel para controle do reset de senhas
-
->`oauth_access_tokens`:  tabela criada pelo ***Laravel Passport*** para controle dos tokens de autenticação entre o cliente e o servidor
-
->`oauth_auth_codes`:  tabela criada pelo ***Laravel Passport***
-
->`oauth_clients`: tabela criada pelo ***Laravel Passport***
-
->`oauth_personal_access_clients`:  tabela criada pelo ***Laravel Passport***
-
->`oauth_refresh_tokens`: tabela criada pelo ***Laravel Passport***
-
-
 ## Funcionalidade de cliente
 
 #### Cadastrar cliente
-
-![Alt text] (https://lh4.googleusercontent.com/SmlRPfJjDJQ8EMgACVbEeqJSLJRaV9lRaAsZNBQJDFq78SCHq115ePVjgE8NzD1O0Kio3oAUvrZ1UmA=w1366-h637-rw)
 
 > `url:` localhost:8000/api/Client
 
@@ -59,8 +44,6 @@ API
 
 ## listar clientes
 
-![Alt text] (https://lh6.googleusercontent.com/qXh54i73JZkdJG5u3wuMpHTgQUR8dGWK2SKLU434yR9w9l5SVnE42I0jkPsZf8Gl47KobeWSXy6MNXQ=w1366-h637-rw)
-
 > `url:` localhost:8000/api/Client
 
 > `verbo http:` GET 
@@ -69,8 +52,6 @@ API
 
 ## Obter um clientes por id
 
-![Alt text] (https://lh6.googleusercontent.com/ICiqmFnxOiW6EiWYT4fpF8Hew275cRas65HIlER9qHh1yUtLIXWOOli8vg2w3U8K3MNxtLAHH4QX36s=w1366-h637-rw)
-
 > `url:` localhost:8000/api/Client/{id}
 
 > `verbo http:` GET 
@@ -78,8 +59,6 @@ API
 > `parâmetros:` client_id (url)
 
 ## Editar cliente
-
-![Alt text] (https://lh3.googleusercontent.com/h1-uXnwQAXsC2C_RNSDbS1omTMwmheWeuCMBzfGLPkQoDpswmrNlX5HRL10RSlK24LphKP5BUt8rlKc=w1366-h637-rw)
 
 > `url:` localhost:8000/api/Client/{id}
 
@@ -96,8 +75,6 @@ API
 
 
 ## Excluir um cliente
-
-![Alt text] (https://lh5.googleusercontent.com/8Hrm2-eGStRPxWg3lzKBfpf2kpgvHUYUFZLKsdqxmdCZ-Ij3Ji8PtlR5oxzfnq4PJYy7iCbAp3M93Zc=w1366-h637-rw)
 
 > `url:` localhost:8000/api/Client/{id}
 
